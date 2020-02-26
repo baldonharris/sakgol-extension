@@ -1,0 +1,10 @@
+{
+  "name": "Sakgol",
+  "version": "1.0",
+  "description": "An extension of saksak sinagol ideas.",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["*://www.reddit.com/*"],
+    "js": ["js/reddit-main.js"]
+  }]
+}
