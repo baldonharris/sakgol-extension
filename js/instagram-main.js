@@ -36,10 +36,14 @@
                 $popup.applyStyle({display: 'none'}).innerHTML = '';
             }
 
-            [].slice.call(document.querySelectorAll("img[alt*='Image may contain']"), 0)
+            [].slice.call(document.querySelectorAll("img[srcset"), 0)
                 .reverse()
                 .slice(0, 8)
                 .map(function (image) {
+                    if (image.closest('main') !== null || image.getAttribute('alt') === 'Instagram') {
+                        return;
+                    }
+
                     let $image = document.createElement('a');
 
                     $image.classList.add('img-to-display');
