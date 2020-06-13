@@ -9,8 +9,7 @@
       "js": ["js/reddit-main.js"]
     }, {
       "matches": ["*://www.instagram.com/*"],
-      "js": ["js/instagram-main.js"],
-      "css" : ["css/instagram-main.css"]
+      "js": ["js/instagram-main.js"]
     }
   ]
 }
